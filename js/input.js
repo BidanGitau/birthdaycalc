@@ -3,12 +3,14 @@ let males = ['Akosua', 'Adowa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
 let Days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 let checkmale = document.getElementById("male").checked;
 let checkfemale = document.getElementById("female").checked;
+let day = document.getElementById('dbirth').ariaValueMax;
+let dbirth = new Date(day);
+let dDay = dbirth.getDay();
 console.log(checkfemale)
 
-let form = document.getElementById('form');
-console.log(form)
-form.addEventListener('click', (event) => {
+let form = document.getElementById('submit');
 
+submit.addEventListener('click', (event) => {
     event.preventDefault();
     naming();
 
