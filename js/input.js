@@ -18,6 +18,10 @@ function naming() {
     let dDay = dbirth.getDay();
     let paragrah = document.getElementById('name');
     let intro = document.getElementById('intro');
+    if (day == "") {
+        alert("Please fill in the form before submission");
+        return false;
+    }
     console.log(dDay)
     console.log(checkfemale)
     console.log(checkmale)
