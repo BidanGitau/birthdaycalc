@@ -2,7 +2,7 @@
 ####  A web apllication that takes in user birthday and their gender and determines the day of the wek one was borna and by using the Ghanian naming system it selects the name whose tradition is naming children in regard to day of the week they are born
 #### By Bidan Gitau
 ## Description
-A web apllication that takes in user birthday and their gender and determines the day of the wek one was borna and by using the Ghanian naming system it selects the name whose tradition is naming children in regard to day of the week they are born
+A web apllication that takes in user birthday and their gender and determines the day of the wek one was borna and by using the Ghanian naming system it selects the name whose tradition is naming children in regard to day of the week they are born [https://github.com/BidanGitau/birthdaycalc]
 ## Setup/Installation Requirements
 *git clone <project repository> 
 *Get to the project diretory
