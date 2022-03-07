@@ -1,8 +1,9 @@
 let form = document.getElementById('submit');
 
-form.addEventListener('click', (event) => {
-    event.preventDefault();
+form.addEventListener('click', (e) => {
+
     naming();
+    e.preventDefault();
 
 });
 
@@ -24,8 +25,8 @@ function naming() {
         paragrah.innerText = (`Your name is ${males[dDay]} and you were born on a ${Days[dDay]}`);
         intro.innerText = (`Hello your name is ${males[dDay]} and you were born on a ${Days[dDay]}`)
     } else {
-        paragrah.innerText = (`Your name is ${males[dDay]} and you were born on a ${Days[dDay]}`);
-        intro.innerText = (`Hello your name is ${males[dDay]} and you were born on a ${Days[dDay]}`)
+        paragrah.innerText = (`Your name is ${females[dDay]} and you were born on a ${Days[dDay]}`);
+        intro.innerText = (`Hello your name is ${females[dDay]} and you were born on a ${Days[dDay]}`)
     }
 
 }
