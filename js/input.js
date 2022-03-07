@@ -26,10 +26,10 @@ function naming() {
     console.log(checkfemale)
     console.log(checkmale)
     if (checkmale) {
-        paragrah.innerText = (`Your name is ${males[dDay]} and you were born on a ${Days[dDay]}`);
+        paragrah.innerText = (` ${males[dDay]} `);
         intro.innerText = (`Hello your name is ${males[dDay]} and you were born on a ${Days[dDay]}`)
     } else {
-        paragrah.innerText = (`Your name is ${females[dDay]} and you were born on a ${Days[dDay]}`);
+        paragrah.innerText = (` ${females[dDay]}`);
         intro.innerText = (`Hello your name is ${females[dDay]} and you were born on a ${Days[dDay]}`)
     }
 
