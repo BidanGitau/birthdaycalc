@@ -3,41 +3,28 @@ let males = ['Akosua', 'Adowa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
 let Days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 let checkmale = document.getElementById("male").checked;
 let checkfemale = document.getElementById("female").checked;
-let day = document.getElementById('dbirth').ariaValueMax;
+let day = document.getElementById('dbirth').value;
 let dbirth = new Date(day);
 let dDay = dbirth.getDay();
+let paragrah = document.getElementById('name');
+let intro = document.getElementById('intro');
+console.log(dDay)
 console.log(checkfemale)
+console.log(checkmale)
 
 let form = document.getElementById('submit');
 
-submit.addEventListener('click', (event) => {
+form.addEventListener('click', (event) => {
     event.preventDefault();
     naming();
 
 });
 
 function naming() {
+    if (checkmale) {
+        paragrah.innerText = (`your name is ${males[dDay]} and you were born on a ${Days[dDay]}`);
+    } else {
+        paragrah.innerText = (`your name is ${males[dDay]} and you were born on a ${Days[dDay]}`);
+    }
 
 }
-
-
-
-
-//     if (genderMale) {
-//         alert(
-//             `Your AKan name is ${males[day]} You were born on a ${daysOfWeek[day]}`
-//         );
-//         document.querySelector(
-//             ".text-info"
-//         ).textContent = `The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. These 'day' 'names' have further meanings concerning the soul and character of the person.`;
-//     } else if (genderFemale) {
-//         alert(
-//             `Your AKan name is ${females[day]} You were born on a ${daysOfWeek[day]}`
-//         );
-//         document.querySelector(
-//             ".text-info"
-//         ).textContent = `The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. These 'day' 'names' have further meanings concerning the soul and character of the person.`;
-//     } else { 
-//         alert("Please fill  in the whole form to get back your akan name");
-//     }
-// });
