@@ -2,5 +2,29 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    font-family: poppins;
+    color: black;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+
+.container {
+    max-width: 100vm;
+    padding: 16px;
+    margin: auto;
+    text-align: center;
+}
+
+.h-5 {
+    font-weight: bold;
+    font-family: 'Bowlby One', cursive;
+    color: rgba(255, 255, 255, 0.596);
+    text-shadow: 20px 0px 10px rgb(136, 233, 45);
 }
